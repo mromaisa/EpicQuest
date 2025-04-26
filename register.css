@@ -1,0 +1,146 @@
+:root {
+  --inpcol: rgb(235, 33, 33);
+  --button1: #0a7faa;
+  --button2: rgb(0, 236, 216);
+  --border: rgb(18, 95, 63);
+  --hover: rgb(21, 248, 180);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  gap: 5vh;
+  background: url("images/gradient-geometric-shapes-dark-background-concept_23-2148438263.webp")
+    center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 60%;
+  height: auto;
+  box-shadow: 0px 0px 10px var(--button2);
+  /* border: 2px solid black; */
+}
+
+.register,
+.introduction {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--button2);
+  font-size: 16px;
+}
+.register {
+  background-color: rgba(255, 255, 255, 0.577);
+  backdrop-filter: blur(5px);
+}
+.introduction {
+  background-image: linear-gradient(to right, var(--button2), var(--button1));
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px 5px 5px;
+}
+
+.header {
+  font-size: 1.05rem;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), var(--button2));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: var(--border);
+}
+
+.email, .username,
+.password,
+.firstname,
+.c_password {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  color: var(--border);
+}
+
+.email input, .username input,
+.password input,
+.firstname input,
+.c_password input {
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid rgb(48, 45, 45);
+  background-color: transparent;
+  outline: none;
+}
+.email input:focus, .username input:focus,
+.firstname input:focus,
+.c_password input:focus,
+.password input:focus {
+  border-bottom: 1.5px solid var(--border);
+  box-shadow: 0 0 10px 2px var(--hover);
+}
+
+button {
+  background-image: linear-gradient(to right, var(--button2), var(--button2));
+  border: 2px solid var(--border);
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 9px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: var(--border);
+  font-weight: bolder;
+  text-decoration: none;
+}
+button:hover {
+  background-image: linear-gradient(to right, var(--button2), var(--button1));
+  border: none;
+  color: white;
+  background-color: unset;
+}
+
+.register {
+  margin-left: -1px;
+  font-size: 0.9rem;
+}
+.login {
+  margin-top: 5px;
+}
+.register a {
+  text-decoration: none;
+  color: var(--button2);
+  font-weight: bold;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 0.75rem;
+  max-height: 70%;
+  overflow-y: ellipsis;
+  text-shadow: 1px 2px 2px white;
+}
+.paragraph h2 {
+  margin-bottom: 15px;
+  font-size: 1.15rem;
+}

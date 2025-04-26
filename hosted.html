@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Games</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <style>
+      :root {
+        --inpcol: rgb(235, 33, 33);
+        --button1: #0a7faa;
+        --button2: rgb(0, 236, 216);
+        --border: rgb(18, 95, 63);
+        --hover: rgb(21, 248, 180);
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+      }
+      body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        background-image: radial-gradient(black, transparent),
+          url("./images/background_converted.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        /* position: absolute; */
+        height: auto;
+        width: 100vw;
+        min-height: 100vh;
+        color: white;
+      }
+      .container1 {
+        height: auto;
+        width: 90vw;
+        background-color: rgba(0, 0, 0, 0.582);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px var(--button2);
+        backdrop-filter: blur(5px);
+        padding: 20px;
+        margin: 5vh;
+      }
+      .container1 h1 {
+        background-image: linear-gradient(to bottom, white, var(--button2));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: var(--border);
+        text-shadow: 0px 0px 5px rgb(141, 249, 225);
+        font-size: 2.05rem;
+        margin: 10px;
+      }
+      .game-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .game {
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .game:hover {
+        transform: scale(1.05);
+      }
+      .game h3 {
+        margin-bottom: 10px;
+      }
+      .game a {
+        background-image: linear-gradient(
+          to right,
+          var(--button2),
+          var(--button2)
+        );
+        border: 2px solid var(--border);
+        padding: 12px 20px;
+        display: inline-block;
+        border-radius: 9px;
+        /* width: 100%; */
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        color: var(--border);
+        font-weight: bolder;
+        text-decoration: none;
+      }
+      .game a:hover {
+        background-image: linear-gradient(
+          to right,
+          var(--button2),
+          var(--button1)
+        );
+        border: none;
+        color: white;
+        background-color: unset;
+      }
+      footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background: #1e1e1e;
+        color: #bbb;
+      }
+      footer a {
+        color: #4ff0f0;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg py-1">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+              <img src="images/EPICQUEST_prev_ui.png" width="140" height="80" alt="EpicQuest Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="home.html">Home</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                          data-bs-toggle="dropdown" aria-expanded="false">Games</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="popular.html">Popular Games</a></li>
+                          <li><a class="dropdown-item" href="other.html">Other Games</a></li>
+                          <li><a class="dropdown-item" href="hosted.html">Hosted Games</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a href="news.html">Blog & Forums</a></li>
+                  <li class="nav-item"><a href="about us page.html">About Us</a></li>
+                  <li class="nav-item"><a href="contact us form.html">Contact Us</a></li>
+              </ul>
+              <div class="d-flex">
+                  <a class="btn btn-dark mx-2" href="login.php">Sign In</a>
+                  <a class="btn btn-dark" href="register.php">Register</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <div class="container1">
+      <h1>Hosted Games</h1>
+      <p style="text-align: center">
+        Explore and enjoy simple games built with only HTML and CSS. No
+        JavaScript required!
+      </p>
+
+      <div class="game-grid">
+        <div class="game">
+          <h3>Tic Tac Toe</h3>
+          <p>A classic two-player game. Play X's and O's until someone wins!</p>
+          <a href="games/tictactoe.html" target="_blank">Play Now</a>
+        </div>
+
+        <div class="game">
+          <h3>Catch the ball</h3>
+          <a href="games/catch_ball.html" target="_blank">Play Now</a>
+        </div>
+
+        <div class="game">
+          <h3>Button Click Race</h3>
+          <a href="games/stack.html" target="_blank">Play Now</a>
+        </div>
+        <div class="game">
+          <h3>Rock Paper Scissor</h3>
+          <a href="games/rock_paper.html" target="_blank">Play Now</a>
+        </div>
+        <div class="game">
+          <h3>Pong Game</h3>
+          <a href="games/pong.html" target="_blank">Play Now</a>
+        </div>
+        <div class="game">
+          <h3>You Must Build A Light House</h3>
+          <a href="games/build.html" target="_blank">Play Now</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024 Gaming Arena | <a href="contact us form.html">Contact Us</a>
+      </p>
+    </footer>
+  </body>
+</html>

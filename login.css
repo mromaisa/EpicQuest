@@ -1,0 +1,142 @@
+:root {
+  --inpcol: rgb(235, 33, 33);
+  --button1: #0a7faa;
+  --button2: rgb(0, 236, 216);
+  --border: rgb(18, 95, 63);
+  --hover: rgb(69, 228, 180);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+  background-attachment: fixed;
+  background: url("images/gradient-geometric-shapes-dark-background-concept_23-2148438263.webp")
+    center/cover no-repeat;
+}
+
+.parent {
+  display: flex;
+  width: 60%;
+  height: auto;
+  box-shadow: 0px 0px 10px var(--button2);
+  /* border: 2px solid black; */
+}
+
+.login_body,
+.introduction {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--button2);
+  text-wrap: wrap;
+  margin: -1px;
+}
+.login_body {
+  background-color: rgba(255, 255, 255, 0.577);
+  backdrop-filter: blur(5px);
+}
+.introduction {
+  background-image: linear-gradient(to right, var(--button2), var(--button1));
+}
+.login_body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  color: black;
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+.header h2 {
+  font-size: 2.5rem;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), var(--button2));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: var(--border);
+}
+.email,
+.password {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  color: var(--border);
+}
+
+.email input,
+.password input {
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid rgb(48, 45, 45);
+  background-color: transparent;
+
+  outline: none;
+}
+
+.email input:focus,
+.password input:focus {
+  border-bottom: 1.5px solid var(--border);
+  box-shadow: 0 0 10px 2px var(--hover);
+}
+
+button {
+  background-image: linear-gradient(to right, var(--button2), var(--button2));
+  border: 2px solid var(--border);
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 9px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: var(--border);
+  font-weight: bolder;
+  text-decoration: none;
+}
+button:hover {
+  background-image: linear-gradient(to right, var(--button2), var(--button1));
+  border: none;
+  color: white;
+  background-color: unset;
+}
+
+.register {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.register a {
+  text-decoration: none;
+  color: var(--button2);
+  font-weight: bold;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 0.85rem;
+  text-shadow: 1px 2px 2px white;
+}
+
+.paragraph h2 {
+  margin: 9px;
+}
+.email::placeholder {
+  color: rgb(37, 37, 37);
+}

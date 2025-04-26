@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Us</title>
+    <link rel="stylesheet" href="contact us style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+</head>
+<body >
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg py-1">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+              <img src="images/EPICQUEST_prev_ui.png" width="140" height="80" alt="EpicQuest Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="home.html">Home</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                          data-bs-toggle="dropdown" aria-expanded="false">Games</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="popular.html">Popular Games</a></li>
+                          <li><a class="dropdown-item" href="other.html">Other Games</a></li>
+                          <li><a class="dropdown-item" href="hosted.html">Hosted Games</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a href="news.html">Blog & Forums</a></li>
+                  <li class="nav-item"><a href="about us page.html">About Us</a></li>
+                  <li class="nav-item"><a href="contact us form.html">Contact Us</a></li>
+              </ul>
+              <div class="d-flex">
+                  <a class="btn btn-dark mx-2" href="login.php">Sign In</a>
+                  <a class="btn btn-dark" href="register.php">Register</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <div class="parent">
+        <div class="container1">
+            <h1 class="h3">Message Us</h1>
+            <form action="" method="post">
+                <div class="input-group flex-nowrap mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" name="message" placeholder="Your Message" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <input type="submit" value="send" id="button" />
+            </form>
+        </div>
+        <div class="introduction">
+            <div class="paragraph">
+                <h3>Contact us</h3>
+                <ul class="list p-0">
+                    <li><img src="images/icons8-address-50.png" width="28" height="28"><strong>ADDRESS:</strong> 198 West 21th Street, Suite 721 New York NY 10016</li>
+                    <li><img src="images/icons8-phone-24.png" alt=""><strong>PHONE:</strong> +1235 2355 98</li>
+                    <li><img src="images/icons8-mail-50.png" width="24" height="24" alt=""><strong>EMAIL:</strong> info@yoursite.com</li>
+                    <li><img src="images/icons8-website-24.png" alt=""><strong>WEBSITE:</strong> yoursite.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gaming Arena | <a href="contact us form.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

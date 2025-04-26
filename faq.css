@@ -1,0 +1,109 @@
+:root {
+  --shadow: rgba(170, 0, 170, 0.729);
+  --button1: rgb(0, 255, 238);
+  --button2: rgb(0, 255, 242);
+  --border: rgb(18, 95, 63);
+  --hover: rgb(21, 108, 82);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  gap: 30px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(black, transparent),
+    url("./images/background_converted.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position: absolute; */
+  height: auto;
+}
+header {
+  background-image: linear-gradient(to bottom, white, var(--button2));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--border);
+  text-shadow: 0px 0px 5px rgb(141, 249, 225);
+  font-size: 1.75rem;
+  margin: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.421);
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.662);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  /* background-color: white; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Item */
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.question {
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #98f8ee;
+  text-shadow: 0px 1.5px 2px var(--button2);
+}
+
+.answer {
+  margin-top: 5px;
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+/* Interaction */
+.question:hover {
+  text-decoration: underline;
+}
+/* footer */
+footer {
+  background-color: black;
+  width: 100vw;
+  color: #ccc;
+  padding: 30px;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #bbb;
+}
+footer a {
+  color: #4ff0f0;
+  text-decoration: none;
+}

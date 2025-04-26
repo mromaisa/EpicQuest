@@ -1,0 +1,100 @@
+:root {
+  --black: black;
+  --button1: #0a7faa;
+  --button2: rgb(0, 236, 216);
+  --border: rgb(18, 95, 63);
+  --hover: rgb(21, 248, 180);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: radial-gradient(black, transparent), url('./images/background_converted.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* position: absolute; */
+  height: auto;
+}
+
+.container1 {
+  width: 55vw;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.582);
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--button2);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-top: 5vh;
+}
+
+
+h1 {
+  background-image: linear-gradient(to bottom, white, var(--button2));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--border);
+  text-shadow: 0px 0px 5px rgb(141, 249, 225);
+  font-size: 1.5rem;
+  margin: 10px;
+  text-align: center;
+}
+
+
+h2 {
+  background-image: linear-gradient(to bottom, white, var(--button2));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--border);
+  text-shadow: 0px 0px 5px rgb(141, 249, 225);
+  font-size: 1.05rem;
+}
+
+
+.container1 p, .container1 ul {
+  color: white;
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+
+.container1 ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.container1 ul li {
+  margin-bottom: 5px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #bbb;
+}
+footer a {
+  color: #4ff0f0;
+  text-decoration: none;
+}
+
+
+  
